@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../pages/css/join.css" />
+    <script src="../pages/js/join.js"></script>
+  </head>
+  <body>
+    <div id="big">
+      <div class="app-layout">
+        <!-- 왼쪽화면 -->
+        <aside class="sidebar">
+          <h1 class="sidebar-h1">
+            <img src="../images/logo.svg" width="147" height="34" />
+            <span class="sidebar-span">계정 만들기</span>
+          </h1>
+        </aside>
+        <!-- //왼쪽화면 -->
+        <div class="join-section-container">
+          <div class="join-layout">
+            <div class="join-title-container">
+              <h3 class="join-title1">계정 만들기</h3>
+              <div class="join-title2">로그인 계정을 생성해주세요</div>
+            </div>
+            <div class="join-name">이름</div>
+            <input
+              id="joininput1"
+              class="join-name-input"
+              type="text"
+              placeholder="홍길동"
+              autocomplete="new-password"
+            />
+            <div id="nameErr" class="join-name-down">-이름을 입력해주세요</div>
+            <div class="join-id">아이디</div>
+            <input id="joininput2" class="join-id-input" type="text" placeholder="예) hong123" />
+            <div id="idErr" class="join-id-down">-로그인할 아이디를 입력해주세요</div>
+            <div class="join-password">비밀번호</div>
+            <input
+              class="join-password-input"
+              id="joininput3"
+              type="password"
+              placeholder="비밀번호를 입력해주세요"
+              autocomplete="new-password"
+            />
+            <div class="join-passwordcheck">비밀번호 확인</div>
+            <input
+              id="joininput4"
+              class="join-passwordcheck-input"
+              type="password"
+              placeholder="입력하신 비밀번호를 확인해주세요"
+              autocomplete="new-password"
+            />
+            <div id="pwcheckErr" class="join-passwordcheck-down">비밀번호가 일치하지않습니다.</div>
+          </div>
+          <footer class="footer">
+            <button onclick="onRegister()" class="complete-button-check">완료</button>
+          </footer>
+        </div>
+      </div>
+      <div class="position"></div>
+    </div>
+  </body>
+</html>

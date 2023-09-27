@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="../pages/css/login.css" />
+  </head>
+  <body>
+    <form action="checkLogin()"></form>
+    <div class="app">
+      <div class="header-con">
+        <div class="header-container">
+          <div class="header-logo"></div>
+          <a href="/" class="a-logo">
+            <img src="../images/logo.svg" class="logo-image" />
+          </a>
+          <a href="../pages/join.html">
+            <span class="logo-span"></span>
+          </a>
+          <div class="header-button">
+            <button class="button-color">
+              <div class="buttoncss">
+                <span class="span-button">회원가입</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="login-container">
+        <div class="login-containerbox">
+          <form>
+            <div class="checkid">아이디</div>
+            <div class="inputid">
+              <input id="idCheck" type="text" placeholder="ID" class="inputid1" />
+            </div>
+            <div class="checkpw">비밀번호</div>
+            <div class="inputpw">
+              <input
+                id="pwcheck"
+                type="password"
+                placeholder="비밀번호를 입력해주세요"
+                class="inputpw1"
+              />
+            </div>
+            <!-- <label class="keepid"> <input type="checkbox" class="keepid1" />로그인 유지 </label> -->
+            <div class="loginbutton">
+              <button class="loginbutton1">로그인</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../pages/js/login.js"></script>
+  </body>
+</html>
