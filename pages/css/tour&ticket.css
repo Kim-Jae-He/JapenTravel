@@ -43,7 +43,7 @@ h2 {
 header {
   width: 100%;
   height: 343px;
-  background: url('/images/오사카성.png') no-repeat center / cover;
+  background: url('/JapenTravel/images/오사카성.png') no-repeat center / cover;
 }
 header .headerWrap {
   background-color: rgba(0, 0, 0, .3);
@@ -106,6 +106,7 @@ header .headerWrap {
   height: 48px;
   border: none;
   border-radius: 4px;
+  background-color:rgba(256, 256, 256, .2)
 }
 
 .search-container-input-img {
@@ -137,7 +138,6 @@ header .headerWrap {
   font-weight: 500;
   text-align: left;
   padding: 0px 16px 0px 48px;
-  color: rgb(73, 80, 86);
   outline: 0px;
   margin: 0;
   line-height: inherit;
@@ -145,7 +145,9 @@ header .headerWrap {
   box-sizing: border-box;
   overflow-anchor: none;
 }
-
+.search-input::placeholder {
+  color: #fff;
+}
 .header-big-container {
   display: flex;
   flex-grow: 1;
@@ -208,11 +210,13 @@ header .headerWrap {
 
 .bottom-header-container-inner {
   display: flex;
-  align-items: center;
+
   width: 100%;
   height: 50px;
+  line-height: 50px;
   max-width: 1060px;
   margin: 0px auto;
+  border: 1px solid #fff;
 }
 
 .mainpage-container {
@@ -239,7 +243,21 @@ header .headerWrap {
 .item-container1 {
   position: relative;
 }
-
+.item-container1 button {
+  height: 48px;
+}
+.item-container1 ul {
+  background-color: #fffš
+  opacity: 0;
+}
+.item-container1 ul.on {
+  opacity: 1;
+}
+.item-container1 ul a {
+  padding: 15px;
+  color: #343A40;
+  font-weight: 500;
+}
 .item-container1-container {
   margin: 0px 0px 0px 14px;
   padding: 0px;
@@ -260,23 +278,39 @@ header .headerWrap {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.4px;
+  color: #fff;
 }
-
 .moreImg {
   display: inline-block;
   border: 0px;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
 }
 
+.headerBg {
+  margin-top: 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.headerBg img {
+  width: 16px;  
+  height: 16px;
+}
+.headerBg ul {
+  margin-left: 2px;
+}
+.headerBg h1 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 72px;
+}
 /* 메인 */
 main {
     border-radius: 12px;
     background-color: #fff;
-}
-section.headerBg {
-    width: 100%;
-
 }
 section.topMenu {
   width: 100%;
@@ -289,6 +323,7 @@ section.topMenu {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px -1px 0px 0px #DEE2E6 inset;
+    padding: 12px 16px;
 }
 section.topMenu a {
     width: 134px;
@@ -339,40 +374,40 @@ section.bottomMenu p {
 }
 /* sec.교통 */
 .traffic .img1 {
-  background: url('/images/traffic1.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic1.jpeg') no-repeat center / cover;
 }
 .traffic .img2 {
-  background: url('/images/traffic2.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic2.jpeg') no-repeat center / cover;
 }
 .traffic .img3 {
-  background: url('/images/traffic3.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic3.jpeg') no-repeat center / cover;
 }
 .traffic .img4 {
-  background: url('/images/traffic4.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic4.jpeg') no-repeat center / cover;
 }
 .traffic .img5 {
-  background: url('/images/traffic5.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic5.jpeg') no-repeat center / cover;
 }
 .traffic .img6 {
-  background: url('/images/traffic6.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic6.jpeg') no-repeat center / cover;
 }
 .traffic .img7 {
-  background: url('/images/traffic7.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic7.jpeg') no-repeat center / cover;
 }
 .traffic .img8 {
-  background: url('/images/traffic8.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic8.jpeg') no-repeat center / cover;
 }
 .traffic .img9 {
-  background: url('/images/traffic9.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic9.jpeg') no-repeat center / cover;
 }
 .traffic .img10 {
-  background: url('/images/traffic10.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic10.jpeg') no-repeat center / cover;
 }
 .traffic .img11 {
-  background: url('/images/traffic11.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic11.jpeg') no-repeat center / cover;
 }
 .traffic .img12 {
-  background: url('/images/traffic12.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/traffic12.jpeg') no-repeat center / cover;
 }
 
 /* 슬라이드 공통 */
@@ -404,7 +439,7 @@ section.ticket {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url('../images/하트.png') no-repeat center / cover;
+  background: url('/JapenTravel/images/하트.pngㄴ') no-repeat center / cover;
   color: #fff;
   position: absolute;
   top: 8px;
@@ -511,40 +546,40 @@ p.price {
   margin-top: 40px;
 }
 .ticket .img1 {
-  background: url('/images/ticket1.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket1.jpeg') no-repeat center / cover;
 }
 .ticket .img2 {
-  background: url('/images/ticket2.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket2.jpeg') no-repeat center / cover;
 }
 .ticket .img3 {
-  background: url('/images/ticket3.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket3.jpeg') no-repeat center / cover;
 }
 .ticket .img4 {
-  background: url('/images/ticket4.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket4.jpeg') no-repeat center / cover;
 }
 .ticket .img5 {
-  background: url('/images/ticket5.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket5.jpeg') no-repeat center / cover;
 }
 .ticket .img6 {
-  background: url('/images/ticket6.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket6.jpeg') no-repeat center / cover;
 }
 .ticket .img7 {
-  background: url('/images/ticket7.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket7.jpeg') no-repeat center / cover;
 }
 .ticket .img8 {
-  background: url('/images/ticket8.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket8.jpeg') no-repeat center / cover;
 }
 .ticket .img9 {
-  background: url('/images/ticket9.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket9.jpeg') no-repeat center / cover;
 }
 .ticket .img10 {
-  background: url('/images/ticket10.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket10.jpeg') no-repeat center / cover;
 }
 .ticket .img11 {
-  background: url('/images/ticket11.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket11.jpeg') no-repeat center / cover;
 }
 .ticket .img12 {
-  background: url('/images/ticket12.jpeg') no-repeat center / cover;
+  background: url('/JapenTravel/images/ticket12.jpeg') no-repeat center / cover;
 }
 /* 푸터 */
 .bot {
