@@ -1,3 +1,17 @@
+div {
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  color: #343a40;
+  letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+}
+
 .main-com {
   overflow: hidden;
 }
