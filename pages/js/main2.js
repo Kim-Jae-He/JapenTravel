@@ -44,3 +44,25 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 });
+
+///시간이 지나면 자동으로 옆으로가는 슬라이드
+const slideWrapper = document.querySelector('.slide-container');
+console.log(slideWrapper);
+const slidess = document.querySelectorAll('.swiper-slide');
+const slideWidth = slidess[0].clientWidth;
+let currentIndex = 0;
+
+const nextSlide = () => {
+  currentIndex++;
+  if (currentIndex >= slidess.length) {
+    currentIndex = 0;
+  }
+  updateSlider();
+};
+
+const updateSlider = () => {
+  slideWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+};
+
+// 자동슬라이드
+setInterval(nextSlide, 3000); // 3초후에 변경

@@ -41,25 +41,6 @@ itemEvent.addEventListener(
   false
 );
 
-/* // 헤더부분 카테고리 마우스올리면 텍스트 색상변경(화살표 함수식으로 고쳐봄)
-
-const cateEvent = () => {
-  const ent = document.querySelector('.mainpage-container');
-
-  ent.addEventListener('mouseover', () => {
-    ent.style.color = 'rgb(121, 190, 245)';
-  });
-
-  event.addEventListener('mouseout', () => {
-    ent.style.color = 'black';
-  });
-};
-
-// 함수를 호출하여 원하는 요소에 이벤트 리스너를 추가할 수 있습니다.
-addMouseHoverEffect('.mainpage-container');
-
- */
-
 //헤더부분 로그인 마우스올리면 배경색 변경
 
 const lgEvent = document.querySelector('.login-container');
