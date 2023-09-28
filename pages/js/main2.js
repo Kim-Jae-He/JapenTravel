@@ -1,3 +1,4 @@
+/*  */
 // 이미지 요소를 선택합니다.
 const image = document.querySelector('.slide-banner-img');
 
@@ -44,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 });
+/*  */
 
+/*  */
 ///시간이 지나면 자동으로 옆으로가는 슬라이드
 const slideWrapper = document.querySelector('.slide-container');
 console.log(slideWrapper);
@@ -66,3 +69,4 @@ const updateSlider = () => {
 
 // 자동슬라이드
 setInterval(nextSlide, 3000); // 3초후에 변경
+/*  */

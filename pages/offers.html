@@ -2,108 +2,107 @@
 <html lang="ko">    <!-- trip2.html -> offers.html 파일명 수정 -->
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>offer</title>
     <link rel="stylesheet"href="../pages/css/offers.css">
-    <link rel="stylesheet" href="../pages/css/header.css" />
-    <link rel="stylesheet" href="../pages/css/footer.css" />
-    <link rel="stylesheet" href="../pages/css/main.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../pages/css/header.css" >
+    <link rel="stylesheet" href="../pages/css/footer.css" >
+    <link rel="stylesheet" href="../pages/css/main.css" >
   </head>
-  <body>
-    <div id="wrap">
+  <body class="body">
     <!--header -->
-      <header id="main-header">
-        <nav class="nav-container">
-          <div class="logo-container">
-            <button type="button" class="button-logo">
-              <img class="img-logo" src="../images/logo.png" alt="myrealtrip" />
-            </button>
-          </div>
-          <div class="search-container">
-            <div class="search-container-input">
-              <div class="search-container-input2">
-                <div class="search-container-input-img">
-                  <img class="search-container-input-img-value" src="../images/read.png" alt="icon" />
-                </div>
-                <input
-                  type="text"
-                  class="search-input"
-                  autocomplete="off"
-                  placeholder="도시나 상품을 검색해보세요"
-                />
+    <header id="main-header">
+      <nav class="nav-container">
+        <div class="logo-container">
+          <button type="button" class="button-logo">
+            <img class="img-logo" src="../images/logo.svg" alt="myrealtrip" />
+          </button>
+        </div>
+        <div class="search-container">
+          <div class="search-container-input">
+            <div class="search-container-input2">
+              <div class="search-container-input-img">
+                <img class="search-container-input-img-value" src="../images/read.png" alt="icon" />
               </div>
+              <input
+                type="text"
+                class="search-input"
+                autocomplete="off"
+                placeholder="도시를 검색해보세요"
+              />
             </div>
           </div>
-          <div class="header-big-container">
-            <div class="header-small-container">
-              <div class="login-container">
-                <button type="button" class="login-button">로그인</button>
-              </div>
-              <div class="login-container">
-                <button type="button" class="join-button">회원가입</button>
-              </div>
+        </div>
+        <div class="header-big-container">
+          <div class="header-small-container">
+            <div class="login-container">
+              <button type="button" class="login-button">로그인</button>
+            </div>
+            <div class="login-join-container">
+              <button type="button" class="join-button">회원가입</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="bottom-header-container">
+        <nav class="bottom-header-container-inner">
+          <div class="mainpage-container">
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">항공권</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">해외숙소</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">국내숙소</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">투어·티켓</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">패키지</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">여행자보험</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">키즈</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">국내 렌터카</span>
+              </a>
+            </div>
+            <div class="item-container">
+              <a href="/" class="href">
+                <span class="item-container-title">유심·이심</span>
+              </a>
+            </div>
+            <div class="item-container1">
+              <button type="button" class="item-container1-container">
+                <span class="item-container1-title">더보기</span>
+                <img src="../images/more.png" class="moreimg" />
+              </button>
             </div>
           </div>
         </nav>
-        <div class="bottom-header-container">
-          <nav class="bottom-header-container-inner">
-            <div class="mainpage-container">
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">홈</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">항공권</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">해외숙소</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">국내숙소</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">투어&bull;티켓</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">패키지</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">여행자보험</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">키즈</span>
-                </a>
-              </div>
-              <div class="item-container">
-                <a href="/" class="href">
-                  <span class="item-container-title">국내 렌터카</span>
-                </a>
-              </div>
-              <div class="item-container1">
-                <button type="button" class="item-container1-container">
-                  <span class="item-container1-title">더보기</span>
-                  <img src="../images/more.png" class="moreimg" />
-                </button>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+      </div>
+    </header>
           <!--//header -->
       <main>
         <div id="main-container">
@@ -790,8 +789,27 @@
             </aside>
           </div>
         </div>
-
+        <!-- footer -->
+    <div class="bot">
+      <footer class="foot">
+        <div class="infoot">
+          <div class="topfoot">
+            <div class="topfoot-in">
+              <span class="team-info">5팀프로젝트 안내</span>
+              <ul class="team-info2">
+                <li class="info-plan">고객센터 010-4073-9805</li>
+                <li class="info-plan">사업장위치</li>
+                <li class="info-plan">서울특별시 강남구 역삼동 736-7</li>
+                <li class="info-plan">사업장전화번호</li>
+                <li class="info-plan">02-538-0021</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- footer -->
         </main>
-      </div>
+        <script src="../pages/js/main_header.js"></script>
   </body>    
 </html>
