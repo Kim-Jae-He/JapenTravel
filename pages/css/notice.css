@@ -69,6 +69,28 @@
   font-family: '돋움', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
 }
 
+.rowlength {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: table-row-group;
+  font-weight: normal;
+}
+
+.td-table {
+  vertical-align: middle;
+  width: 960px;
+  padding: 16px 0 !important;
+  font-size: 15px;
+  color: #495056;
+  line-height: 16px !important;
+  border-right: none;
+  border-color: #e9ecef;
+}
+
 col {
   display: table-column;
 }
