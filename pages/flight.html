@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이리얼트립항공권</title>
+    <link rel="stylesheet" href="../pages/css/flight.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="nav-container">
+          <div class="logo-container">
+            <button type="button" class="button-logo">
+              <img class="img-logo" src="../images/logo.png" alt="myrealtrip" />
+            </button>
+          </div>
+          <div class="search-container">
+            <div class="search-container-input">
+              <div class="search-container-input2">
+                <div class="search-container-input-img">
+                  <img class="search-container-input-img-value" src="../images/read.png" alt="icon" />
+                </div>
+                <input
+                  type="text"
+                  class="search-input"
+                  autocomplete="off"
+                  placeholder="도시를 검색해보세요"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="header-big-container">
+            <div class="header-small-container">
+              <div class="login-container">
+                <button type="button" class="login-button">로그인</button>
+              </div>
+              <div class="login-join-container">
+                <button type="button" class="join-button">회원가입</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="bottom-header-container">
+          <nav class="bottom-header-container-inner">
+            <div class="mainpage-container">
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">항공권</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">해외숙소</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">국내숙소</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">투어·티켓</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">패키지</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">여행자보험</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">키즈</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">국내 렌터카</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">유심·이심</span>
+                </a>
+              </div>
+              <div class="item-container1">
+                <button type="button" class="item-container1-container">
+                  <span class="item-container1-title">더보기</span>
+                  <img src="../images/more.png" class="moreImg" />
+                </button>
+                <ul>
+                    <li>
+                      <a href="#">유심이심</a>
+                    </li>
+                    <li>
+                      <a href="#">한인민박</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 호텔 특가</a>
+                    </li>
+                    <li>
+                      <a href="#">펜션풀빌라</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 렌터카</a>
+                    </li>
+                    <li>
+                      <a href="#">롱스테이</a>
+                    </li>
+                    <li>
+                      <a href="#">할인이벤트</a>
+                    </li>
+                    <li>
+                      <a href="#">물놀이 특가대전</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 투어티켓 특가</a>
+                    </li>
+                    <li>
+                      <a href="#">비즈니스</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 골프</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <main>
+        <section class="select inner">
+            <div class="selectTop row">
+                <ul class="row">
+                    <li>
+                        <button class="roundTrip">왕복</button>
+                    </li>
+                    <li>
+                        <a href="#">편도</a>
+                    </li>
+                    <li>
+                        <a href="#">다구간</a>
+                    </li>
+                </ul>
+                <div class="reservation row">
+                    <button>회원 예약내역 <img src="" alt=""></button>
+                    <button>비회원 예약내역 <img src="" alt=""></button>
+                </div>
+            </div>
+            <div class="selectMiddle row">
+                <div class="city row">
+                    <a href="#" class="seoul">서울 (SEL)</a>
+                    <a href="#"><img src="../images/around.png" alt=""></a>
+                    <a href="#" class="seoul">오사카 (OSA)</a>
+                </div>
+                <div class="selectDate"></div>
+                <div class="selectPerson"></div>
+            </div>
+            <div class="selectBottom row">
+                <div class="row">
+                    <input type="checkbox" name="직항만" id="">
+                    <input type="checkbox" name="무료 수하물 가능" id="">
+                    <span>|</span>
+                    <p>출발/도착 다른 구간 <img src="" alt=""></p>
+                </div>
+                <button class="flightSearch">항공권 검색</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="../pages/js/flight.js"></script>
+</body>
+</html>
