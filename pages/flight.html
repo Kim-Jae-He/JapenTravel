@@ -148,8 +148,8 @@
                     </li>
                 </ul>
                 <div class="reservation row">
-                    <button>회원 예약내역 <img src="" alt=""></button>
-                    <button>비회원 예약내역 <img src="" alt=""></button>
+                    <button>회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
+                    <button>비회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
                 </div>
             </div>
             <div class="selectMiddle row">
@@ -163,16 +163,107 @@
             </div>
             <div class="selectBottom row">
                 <div class="row">
-                    <input type="checkbox" name="직항만" id="">
-                    <input type="checkbox" name="무료 수하물 가능" id="">
-                    <span>|</span>
-                    <p>출발/도착 다른 구간 <img src="" alt=""></p>
+                  <label for="">
+                    <input type="checkbox" name="oneWay" id="">
+                    <span>직항만</span>
+                  </label>
+                  <label for="">
+                    <input type="checkbox" name="free">
+                    <span>무료 수하물 가능</span>
+                  </label>  
+                  <span></span>
+                  <p>출발/도착 다른 구간 <img src="/JapenTravel/images/question.png" alt=""></p>
                 </div>
                 <button class="flightSearch">항공권 검색</button>
             </div>
         </section>
+        <section class="notice inner row">
+          <div class="row">
+            <label for="">공지</label>
+            <p class="text">[공지]추석 연휴 업무 시간 안내</p>
+            <span></span>
+            <p>2023-09-25</p>
+          </div>
+          <div class="row">
+            <p>모두보기</p>
+            <img src="/JapenTravel/images/next.png" alt="">
+          </div>
+        </section>
+        <section class="event inner">
+          <h1>진행중인 이벤트</h1>
+          <div class="swiper-container eventSlide">
+            <div class="slideNavigation row">
+              <button class="slidePrev">
+                <a href="#">
+                  <img src="../images/prev.png" alt="">
+                </a>
+              </button>
+              <button class="slideNext">
+                <a href="#">
+                  <img src="../images/next.png" alt="">
+                </a>
+              </button>
+            </div>
+            <div class="swiper-wrapper row">
+              <li class="swiper-slide1">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">대한항공 미주노선 특가 프로모션</p>
+                    <p class="subTitle">1등 항공사와 떠나는 샌프란시스코, 보스턴 여행</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide2">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">대한항공 부산 대구 출발 내항편</p>
+                    <p class="subTitle">부산 출도착 매일 4회, 대구 출도착 매일 1회</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide3">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/AirAstanaLogo.png" alt="" class="airAstana">
+                    </div>
+                    <p class="title">에어아스타나와 함께 하는 새로운 여행</p>
+                    <p class="subTitle">중앙아시아 알마티부터 주요 유럽노선과 두바이까지</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide4">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">대한항공 미주노선 특가 프로모션</p>
+                    <p class="subTitle">1등 항공사와 떠나는 샌프란시스코, 보스턴 여행</p>
+                  </div>
+                </a>
+              </li>
+              
+            </div>
+          </div>
+        </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../pages/js/flight.js"></script>
 </body>
 </html>
