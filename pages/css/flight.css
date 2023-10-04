@@ -329,6 +329,23 @@
     width: 32px;
     height: 32px;
 }
+.selectDate {
+  width: 302px;
+  height: 48px;
+  padding-left: 44px;
+  align-items: center;
+  border: 1px solid #DEE2E6;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.selectDate input {
+  width: 106px;
+  height: 46px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 /* selectBottom */
 .selectBottom {
   position: relative;
@@ -425,13 +442,11 @@ section.notice div:last-child img {
 }
 /* sec.event */
 section.event {
-  border: 1px solid red;
   margin: 48px auto 85px;
 }
 .swiper-container {
   overflow: hidden;
   margin-top: 20px;
-  border: 1px solid #000;
   position: relative;
 }
 
@@ -441,7 +456,6 @@ section.event li a {
   height: 128px;
   border-radius: 24px;
   color: #fff; 
-  border: 1px solid blue;
   margin-right: 20px;
 }
 section.event div.dark {
@@ -451,16 +465,16 @@ section.event div.dark {
   border-radius: 24px;
   background-color: rgba(0, 0, 0, .3);
 }
-section.event li.swiper-slide1 a {
-  background: url('/JapenTravel/images/sanfrancisco.jpeg') no-repeat center / cover;
+section.event li:first-child a {
+  background: url('/JapenTravel/images/airBusan.png') no-repeat center / cover;
 }
-section.event li.swiper-slide2 a {
+section.event li:nth-child(2) a {
   background: url('/JapenTravel/images/busan.jpeg') no-repeat center / cover;
 }
-section.event li.swiper-slide3 a {
+section.event li:nth-child(3) a {
   background: url('/JapenTravel/images/airastana.jpeg') no-repeat center / cover;
 }
-section.event li.swiper-slide4 a {
+section.event li:last-child a {
   background: url('/JapenTravel/images/sanfrancisco.jpeg') no-repeat center / cover;
 }
 .myRealTrip {
@@ -513,3 +527,122 @@ section.event p.subTitle {
 .slideNext {
   right: -20px;
 }
+/* sec.search */
+/* sec.jeju */
+section.jeju {
+  margin-top: 48px;
+}
+section.search h1,
+section.jeju h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section.search ul,
+section.jeju ul {
+  width: 100%;
+  justify-content: space-between;
+}
+section.search a,
+section.jeju a {
+  display: block;
+  width: 250px;
+  height: 279px;
+  border-radius: 24px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  color: #343A40;
+}
+.searchBottom,
+.jejuBottom {
+  padding: 12px 16px;
+}
+.searchBottom h4,
+.jejuBottom h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.searchBottom p,
+.jejuBottom p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #848c94;
+}
+.searchBottom span,
+.jejuBottom span {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+div[class^="searchImg"],
+div[class^="jejuImg"] {
+  height: 168px;
+  overflow: hidden;
+}
+.searchImg1 {
+  background: url('/JapenTravel/images/방콕.jpeg') no-repeat center / cover;
+}
+.searchImg2 {
+  background: url('/JapenTravel/images/도쿄.jpeg') no-repeat center / cover;
+}
+.searchImg3 {
+  background: url('/JapenTravel/images/다낭.jpeg') no-repeat center / cover;
+}
+.searchImg4 {
+  background: url('/JapenTravel/images/대만.jpeg') no-repeat center / cover;
+}
+.jejuImg1 {
+  background: url('/JapenTravel/images/제주1.jpeg') no-repeat center / cover;
+}
+.jejuImg2 {
+  background: url('/JapenTravel/images/제주2.jpeg') no-repeat center / cover;
+}
+.jejuImg3 {
+  background: url('/JapenTravel/images/제주3.jpeg') no-repeat center / cover;
+}
+.jejuImg4 {
+  background: url('/JapenTravel/images/제주4.jpeg') no-repeat center / cover;
+}
+/* sec.flightNotice */
+section.flightNotice {
+  margin-top: 80px;
+}
+section.flightNotice p.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+section.flightNotice p.more {
+  color: #848c94;
+}
+section.flightNotice > div.row {
+  width: 100%;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+section.flightNotice > div.row img {
+  width: 15px;
+  height: 15px;
+}
+section.flightNotice ul {
+  border-top: 1px solid #ced4da;
+  margin-top: 10px;
+}
+section.flightNotice ul li {
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #e9ecef;
+  align-items: center;
+}
+section.flightNotice ul li a {
+  color: #495056;
+  font-size: 15px;
+}
+section.flightNotice ul li span {
+  color:#848c94;
+  font-size: 13px;
+}
+

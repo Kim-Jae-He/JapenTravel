@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이리얼트립항공권</title>
     <link rel="stylesheet" href="../pages/css/flight.css">
+    <link rel="stylesheet" href="datepicker-ui.css">
 </head>
 <body>
     <header id="main-header">
@@ -158,7 +159,14 @@
                     <a href="#"><img src="../images/around.png" alt=""></a>
                     <a href="#" class="seoul">오사카 (OSA)</a>
                 </div>
-                <div class="selectDate"></div>
+                <div class="selectDate row">
+                  <div class="find-checkIn">
+                    <input type="text" placeholder="가는날 선택" id="datepicker">
+                  </div>
+                  <div class="find-checkOut">
+                    <input type="text" placeholder="오는날 선택" id="datepicker2">
+                  </div>
+                </div>
                 <div class="selectPerson"></div>
             </div>
             <div class="selectBottom row">
@@ -205,7 +213,7 @@
               </button>
             </div>
             <div class="swiper-wrapper row">
-              <li class="swiper-slide1">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="dark">
                     <div class="row">
@@ -213,12 +221,12 @@
                       <span></span>
                       <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
                     </div>
-                    <p class="title">대한항공 미주노선 특가 프로모션</p>
-                    <p class="subTitle">1등 항공사와 떠나는 샌프란시스코, 보스턴 여행</p>
+                    <p class="title">에어부산 제주, 부산 단독 특가</p>
+                    <p class="subTitle">특가 항공권 예약</p>
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide2">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="dark">
                     <div class="row">
@@ -231,7 +239,7 @@
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide3">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="dark">
                     <div class="row">
@@ -244,7 +252,7 @@
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide4">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="dark">
                     <div class="row">
@@ -261,9 +269,132 @@
             </div>
           </div>
         </section>
+        <section class="search inner">
+          <h1>검색이 가장 많은 도시 TOP 4 ✈</h1>
+          <ul class="row">
+            <li>
+              <a href="#">
+                <div class="searchImg1"></div>
+                <div class="searchBottom">
+                  <h4>방콕</h4>
+                  <p>서울  → 방콕</p>
+                  <p>10월 19일 - 10월 23일</p>
+                  <span>393,800원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg2"></div>
+                <div class="searchBottom">
+                  <h4>도쿄</h4>
+                  <p>서울  → 도쿄</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>385,400원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg3"></div>
+                <div class="searchBottom">
+                  <h4>다낭</h4>
+                  <p>서울  → 다낭</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>337,200원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg4"></div>
+                <div class="searchBottom">
+                  <h4>대만(타오위안)</h4>
+                  <p>서울  → 대만</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>395,000원~</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="jeju inner">
+          <h1>🛫선선한 가을 🍂제주와 함께 보내세요🛬</h1>
+          <ul class="row">
+            <li>
+              <a href="#">
+                <div class="jejuImg1"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>10월 24일 - 10월 24일</p>
+                  <span>30,770원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg2"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>10월 31일 - 10월 31일</p>
+                  <span>36,290원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg3"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>11월 7일 - 11월 7일</p>
+                  <span>28,800원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg4"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>11월 14일 - 11월 14일</p>
+                  <span>28,800원~</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="flightNotice inner">
+          <div class="row">
+            <p class="title">항공권 공지사항</p>
+            <div class="row">
+              <p class="more">더보기</p>
+              <img src="/JapenTravel/images/next.png" alt="">
+            </div>
+          </div>
+          <ul>
+            <li class="row">
+              <a href="#">[공지]추석 연휴 업무 시간 안내</a>
+                <span>2023-09-25</span>
+            </li>
+            <li class="row">
+              <a href="#">[공지]2023년 10월 1일 부 유류할증료 인상 예정 안내</a>
+                <span>2023-09-25</span>
+            </li>
+            <li class="row">
+              <a href="#">[공지]항공 시스템사 (토파스) 시스템 작업에 따른 이용 제한 안내</a>
+                <span>2023-09-22</span>
+            </li>
+          </ul>
+        </section>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="../pages/js/flight.js"></script>
 </body>
 </html>
