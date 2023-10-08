@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이리얼트립항공권</title>
+    <link rel="stylesheet" href="../pages/css/flight.css">
+    <link rel="stylesheet" href="datepicker-ui.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="nav-container">
+          <div class="logo-container">
+            <button type="button" class="button-logo">
+              <img class="img-logo" src="../images/logo.png" alt="myrealtrip" />
+            </button>
+          </div>
+          <div class="search-container">
+            <div class="search-container-input">
+              <div class="search-container-input2">
+                <div class="search-container-input-img">
+                  <img class="search-container-input-img-value" src="../images/read.png" alt="icon" />
+                </div>
+                <input
+                  type="text"
+                  class="search-input"
+                  autocomplete="off"
+                  placeholder="도시를 검색해보세요"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="header-big-container">
+            <div class="header-small-container">
+              <div class="login-container">
+                <button type="button" class="login-button">로그인</button>
+              </div>
+              <div class="login-join-container">
+                <button type="button" class="join-button">회원가입</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="bottom-header-container">
+          <nav class="bottom-header-container-inner">
+            <div class="mainpage-container">
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">항공권</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">해외숙소</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">국내숙소</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">투어·티켓</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">패키지</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">여행자보험</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">키즈</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">국내 렌터카</span>
+                </a>
+              </div>
+              <div class="item-container">
+                <a href="/" class="href">
+                  <span class="item-container-title">유심·이심</span>
+                </a>
+              </div>
+              <div class="item-container1">
+                <button type="button" class="item-container1-container">
+                  <span class="item-container1-title">더보기</span>
+                  <img src="../images/more.png" class="moreImg" />
+                </button>
+                <ul>
+                    <li>
+                      <a href="#">유심이심</a>
+                    </li>
+                    <li>
+                      <a href="#">한인민박</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 호텔 특가</a>
+                    </li>
+                    <li>
+                      <a href="#">펜션풀빌라</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 렌터카</a>
+                    </li>
+                    <li>
+                      <a href="#">롱스테이</a>
+                    </li>
+                    <li>
+                      <a href="#">할인이벤트</a>
+                    </li>
+                    <li>
+                      <a href="#">물놀이 특가대전</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 투어티켓 특가</a>
+                    </li>
+                    <li>
+                      <a href="#">비즈니스</a>
+                    </li>
+                    <li>
+                      <a href="#">해외 골프</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <main>
+        <section class="select inner">
+            <div class="selectTop row">
+                <ul class="row">
+                    <li>
+                        <button class="roundTrip">왕복</button>
+                    </li>
+                    <li>
+                        <a href="#">편도</a>
+                    </li>
+                    <li>
+                        <a href="#">다구간</a>
+                    </li>
+                </ul>
+                <div class="reservation row">
+                    <button>회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
+                    <button>비회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
+                </div>
+            </div>
+            <div class="selectMiddle row">
+                <div class="city row">
+                    <a href="#" class="seoul">서울 (SEL)</a>
+                    <a href="#"><img src="../images/around.png" alt=""></a>
+                    <a href="#" class="seoul">오사카 (OSA)</a>
+                </div>
+                <div class="selectDate row">
+                  <div class="find-checkIn">
+                    <input type="text" placeholder="가는날 선택" id="datepicker">
+                  </div>
+                  <div class="find-checkOut">
+                    <input type="text" placeholder="오는날 선택" id="datepicker2">
+                  </div>
+                </div>
+                <div class="selectPerson"></div>
+            </div>
+            <div class="selectBottom row">
+                <div class="row">
+                  <label for="">
+                    <input type="checkbox" name="oneWay" id="">
+                    <span>직항만</span>
+                  </label>
+                  <label for="">
+                    <input type="checkbox" name="free">
+                    <span>무료 수하물 가능</span>
+                  </label>  
+                  <span></span>
+                  <p>출발/도착 다른 구간 <img src="/JapenTravel/images/question.png" alt=""></p>
+                </div>
+                <button class="flightSearch">항공권 검색</button>
+            </div>
+        </section>
+        <section class="notice inner row">
+          <div class="row">
+            <label for="">공지</label>
+            <p class="text">[공지]추석 연휴 업무 시간 안내</p>
+            <span></span>
+            <p>2023-09-25</p>
+          </div>
+          <div class="row">
+            <p>모두보기</p>
+            <img src="/JapenTravel/images/next.png" alt="">
+          </div>
+        </section>
+        <section class="event inner">
+          <h1>진행중인 이벤트</h1>
+          <div class="swiper-container eventSlide">
+            <div class="slideNavigation row">
+              <button class="slidePrev">
+                <a href="#">
+                  <img src="../images/prev.png" alt="">
+                </a>
+              </button>
+              <button class="slideNext">
+                <a href="#">
+                  <img src="../images/next.png" alt="">
+                </a>
+              </button>
+            </div>
+            <div class="swiper-wrapper row">
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">에어부산 제주, 부산 단독 특가</p>
+                    <p class="subTitle">특가 항공권 예약</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">대한항공 부산 대구 출발 내항편</p>
+                    <p class="subTitle">부산 출도착 매일 4회, 대구 출도착 매일 1회</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/AirAstanaLogo.png" alt="" class="airAstana">
+                    </div>
+                    <p class="title">에어아스타나와 함께 하는 새로운 여행</p>
+                    <p class="subTitle">중앙아시아 알마티부터 주요 유럽노선과 두바이까지</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="dark">
+                    <div class="row">
+                      <img src="/JapenTravel/images/logoWh.svg" alt="" class="myRealTrip">
+                      <span></span>
+                      <img src="/JapenTravel/images/koreanairLogo.png" alt="" class="koreanAir">
+                    </div>
+                    <p class="title">대한항공 미주노선 특가 프로모션</p>
+                    <p class="subTitle">1등 항공사와 떠나는 샌프란시스코, 보스턴 여행</p>
+                  </div>
+                </a>
+              </li>
+              
+            </div>
+          </div>
+        </section>
+        <section class="search inner">
+          <h1>검색이 가장 많은 도시 TOP 4 ✈</h1>
+          <ul class="row">
+            <li>
+              <a href="#">
+                <div class="searchImg1"></div>
+                <div class="searchBottom">
+                  <h4>방콕</h4>
+                  <p>서울  → 방콕</p>
+                  <p>10월 19일 - 10월 23일</p>
+                  <span>393,800원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg2"></div>
+                <div class="searchBottom">
+                  <h4>도쿄</h4>
+                  <p>서울  → 도쿄</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>385,400원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg3"></div>
+                <div class="searchBottom">
+                  <h4>다낭</h4>
+                  <p>서울  → 다낭</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>337,200원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="searchImg4"></div>
+                <div class="searchBottom">
+                  <h4>대만(타오위안)</h4>
+                  <p>서울  → 대만</p>
+                  <p>11월 14일 - 11월 20일</p>
+                  <span>395,000원~</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="jeju inner">
+          <h1>🛫선선한 가을 🍂제주와 함께 보내세요🛬</h1>
+          <ul class="row">
+            <li>
+              <a href="#">
+                <div class="jejuImg1"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>10월 24일 - 10월 24일</p>
+                  <span>30,770원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg2"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>10월 31일 - 10월 31일</p>
+                  <span>36,290원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg3"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>11월 7일 - 11월 7일</p>
+                  <span>28,800원~</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="jejuImg4"></div>
+                <div class="jejuBottom">
+                  <h4>제주</h4>
+                  <p>서울  → 제주</p>
+                  <p>11월 14일 - 11월 14일</p>
+                  <span>28,800원~</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="flightNotice inner">
+          <div class="row">
+            <p class="title">항공권 공지사항</p>
+            <div class="row">
+              <p class="more">더보기</p>
+              <img src="/JapenTravel/images/next.png" alt="">
+            </div>
+          </div>
+          <ul>
+            <li class="row">
+              <a href="#">[공지]추석 연휴 업무 시간 안내</a>
+                <span>2023-09-25</span>
+            </li>
+            <li class="row">
+              <a href="#">[공지]2023년 10월 1일 부 유류할증료 인상 예정 안내</a>
+                <span>2023-09-25</span>
+            </li>
+            <li class="row">
+              <a href="#">[공지]항공 시스템사 (토파스) 시스템 작업에 따른 이용 제한 안내</a>
+                <span>2023-09-22</span>
+            </li>
+          </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../pages/js/flight.js"></script>
+</body>
+</html>

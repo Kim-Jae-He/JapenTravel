@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../pages/css/header.css" />
     <link rel="stylesheet" href="../pages/css/footer.css" />
     <link rel="stylesheet" href="../pages/css/main.css" />
+    <link rel="stylesheet" href="../pages/css/notice.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body class="body">
@@ -206,7 +207,7 @@
                   >
                     <img src="../images/left.png" alt="prev" />
                   </button> -->
-
+                  <!-- 오른쪽버튼 -->
                   <button
                     type="button"
                     class="next-carousel"
@@ -216,7 +217,7 @@
                     aria-disabled="false"
                     style="top: calc(50%); right: -10px"
                   >
-                    <img src="../images/right.png" alt="next" />
+                    <img class="nextnext-img" src="../images/next.png" alt="next" />
                   </button>
                 </div>
               </div>
@@ -307,33 +308,65 @@
                             src="https://d2ur7st6jjikze.cloudfront.net/cms/1579_original_1692577640.jpg?1692577640"
                             class="slide-banner-img"
                           />
+                          <img src="../images/tokyotower.jpg" class="slide-banner-img" />
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="nav-but">
-                  <img class="nav-but-img" src="../images/left.png" />
-                </button>
-                <div class="pagenation">
-                  <div class="pagenation-img">
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                    <span class="pagenation-but"></span>
-                  </div>
-                </div>
-                <button class="nav-but2">
-                  <img class="nav-but-img2" src="../images/right.png" />
-                </button>
               </div>
             </div>
           </div>
           <!-- //메인 2번째슬라이드 -->
+          <!-- 메인페이지 공지사항 -->
+          <form id="notice-board">
+            <div class="main-notice" id="notice">
+              <h2 class="main-notice-title">공지사항</h2>
+              <div class="more-view">
+                <a href="" class="moreicon">더보기 </a>
+                <div class="notice-mini">
+                  <table class="notice-con" id="notice-table" style="table-layout: auto">
+                    <colgroup>
+                      <col style="width: 72px" />
+                      <col style="width: 960px" />
+                      <col style="width: 120px" />
+                    </colgroup>
+                    <thead style="display: none">
+                      <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">등록일</th>
+                      </tr>
+                    </thead>
+                    <tbody id="rowlength">
+                      <tr style="width: 1060">
+                        <td>1</td>
+                        <td class="td-table">
+                          <a href="">[공지] 홈페이지에 오신걸 환영합니다.</a>
+                        </td>
+                        <td class="time">2023-09-28</td>
+                      </tr>
+                      <tr style="width: 1060">
+                        <td>2</td>
+                        <td class="td-table">
+                          <a href="">[이벤트] 홈페이지에 오신걸 환영합니다.</a>
+                        </td>
+                        <td class="time">2023-09-28</td>
+                      </tr>
+                      <tr style="width: 1060">
+                        <td>3</td>
+                        <td class="td-table">
+                          <a href="">[업데이트] 홈페이지에 오신걸 환영합니다.</a>
+                        </td>
+                        <td class="time">2023-09-28</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- //메인페이지 공지사항 -->
         </div>
       </div>
     </main>
@@ -355,12 +388,12 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="botfoot"></div> -->
         </div>
       </footer>
     </div>
     <!-- footer -->
     <script src="../pages/js/main.js"></script>
     <script src="../pages/js/main2.js"></script>
+    <script src="../pages/js/main_header.js"></script>
   </body>
 </html>
