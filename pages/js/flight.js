@@ -23,10 +23,43 @@ moreBtn.addEventListener('mouseleave', function(){
     more.style.opacity = '0';
 });
 
+// 도시 변경
+change = () => {
+    let seoulCh = document.querySelector('.seoul');
+    let osakaCh = document.querySelector('.osaka');
+    seoulCh.textContent = '오사카 (OSA)';
+    osakaCh.textContent = '서울 (SEL)';
+}
+
 // 날짜 선택
 $( function() {
-    $( "#datepicker" ).datepicker();
-} );
-$( function() {
-$( "#datepicker2" ).datepicker();
-} );
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 2
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 2
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  });

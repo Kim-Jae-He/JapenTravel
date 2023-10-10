@@ -136,54 +136,68 @@
     </header>
     <main>
         <section class="select inner">
-            <div class="selectTop row">
-                <ul class="row">
-                    <li>
-                        <button class="roundTrip">왕복</button>
-                    </li>
-                    <li>
-                        <a href="#">편도</a>
-                    </li>
-                    <li>
-                        <a href="#">다구간</a>
-                    </li>
-                </ul>
-                <div class="reservation row">
-                    <button>회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
-                    <button>비회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
-                </div>
+          <div class="selectTop row">
+              <ul class="row">
+                  <li>
+                      <button class="roundTrip">왕복</button>
+                  </li>
+                  <li>
+                      <a href="#">편도</a>
+                  </li>
+                  <li>
+                      <a href="#">다구간</a>
+                  </li>
+              </ul>
+              <div class="reservation row">
+                  <button>회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
+                  <button>비회원 예약내역 <img src="/JapenTravel/images/arrow-next.png" alt=""></button>
+              </div>
+          </div>
+          <div class="selectMiddle row">
+            <div class="city row">
+                <a href="#" class="seoul">서울 (SEL)</a>
+                <a href="#" onclick="change();"><img src="../images/around.png" alt=""></a>
+                <a href="#" class="osaka">오사카 (OSA)</a>
             </div>
-            <div class="selectMiddle row">
-                <div class="city row">
-                    <a href="#" class="seoul">서울 (SEL)</a>
-                    <a href="#"><img src="../images/around.png" alt=""></a>
-                    <a href="#" class="seoul">오사카 (OSA)</a>
-                </div>
-                <div class="selectDate row">
-                  <div class="find-checkIn">
-                    <input type="text" placeholder="가는날 선택" id="datepicker">
-                  </div>
-                  <div class="find-checkOut">
-                    <input type="text" placeholder="오는날 선택" id="datepicker2">
-                  </div>
-                </div>
-                <div class="selectPerson"></div>
+            <div class="selectDate row">
+              <input type="text" placeholder="가는날 선택" id="from" name="from">
+              <input type="text" placeholder="오는날 선택" id="to" name="to">
             </div>
-            <div class="selectBottom row">
-                <div class="row">
-                  <label for="">
-                    <input type="checkbox" name="oneWay" id="">
-                    <span>직항만</span>
-                  </label>
-                  <label for="">
-                    <input type="checkbox" name="free">
-                    <span>무료 수하물 가능</span>
-                  </label>  
-                  <span></span>
-                  <p>출발/도착 다른 구간 <img src="/JapenTravel/images/question.png" alt=""></p>
-                </div>
-                <button class="flightSearch">항공권 검색</button>
+            <div class="selectPerson">승객 1명, 일반석</div>
+          </div>
+          <div class="popUp">
+            <div class="popTop">
+              <h1>인원 & 좌석등급</h1>
+              <p>나이는 탑승일 기준으로 선택해주세요.</p>
             </div>
+            <div class="popMiddle">
+              <div class="row">
+                <h1>성인</h1>
+                <span>만 12세 이상</span>
+              </div>
+              <div class="row">
+                <h1>소아</h1>
+                <span>만 12세 미만</span>
+              </div>
+              <div class="row">
+                <h1>유아</h1>
+                <span>24개월 미만</span>
+              </div>
+            </div>
+          </div>
+          <div class="selectBottom row">
+            <label for="">
+              <input type="checkbox" name="oneWay" id="">
+              <span>직항만</span>
+            </label>
+            <label for="">
+              <input type="checkbox" name="free">
+              <span>무료 수하물 가능</span>
+            </label>  
+            <span></span>
+            <p>출발/도착 다른 구간 <img src="/JapenTravel/images/question.png" alt=""></p>
+            <button class="flightSearch">항공권 검색</button>
+          </div>
         </section>
         <section class="notice inner row">
           <div class="row">
