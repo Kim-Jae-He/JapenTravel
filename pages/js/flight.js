@@ -63,3 +63,51 @@ $( function() {
       return date;
     }
   });
+
+  up1 = () => {
+    var count = document.getElementById("quantity1").value;
+    if (count != 9) {
+        document.getElementById("quantity1").value = parseInt(count) + 1;
+    }
+
+  }
+  down1 = () => {
+      var count = document.getElementById("quantity1").value;
+      if (count != 1) {
+          document.getElementById("quantity1").value = parseInt(count) - 1;
+      }
+  };
+  up2 = () => {
+    var count = document.getElementById("quantity2").value;
+    if (count != 9) {
+        document.getElementById("quantity2").value = parseInt(count) + 1;
+    }
+
+  }
+  down2 = () => {
+      var count = document.getElementById("quantity2").value;
+      if (count != 1) {
+          document.getElementById("quantity2").value = parseInt(count) - 1;
+      }
+  };
+  up3 = () => {
+    var count = document.getElementById("quantity3").value;
+    if (count != 9) {
+        document.getElementById("quantity3").value = parseInt(count) + 1;
+    }
+
+  }
+  down3 = () => {
+      var count = document.getElementById("quantity3").value;
+      if (count != 1) {
+          document.getElementById("quantity3").value = parseInt(count) - 1;
+      }
+  };
+  popOn = () => {
+    let popUp = document.querySelector('.popUp');
+    popUp.style.opacity = '1';
+  }
+  popOff = () => {
+    let popUp = document.querySelector('.popUp');
+    popUp.style.opacity = '0';
+  }

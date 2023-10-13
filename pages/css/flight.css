@@ -316,6 +316,7 @@
   height: 48px;
   border: 1px solid #000;
   margin-bottom: 36px;
+  position: relative;
 }
 .selectMiddle .city {
     width: 460px;
@@ -339,35 +340,74 @@
 .selectDate {
   width: 302;
   height: 46px;
+  align-items: center;
   border: 1px solid #DEE2E6;
   border-radius: 16px;
-  padding: 0 44px;
+  padding: 0 70px 0 10px;
   font-size: 15px;
   font-weight: 600;
 
+}
+.selectDate img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 .selectDate input {
   width: 106px;
   border: none;
 }
+.selectDate input::placeholder {
+  color: #777;
+  font-size: 11px;
+}
 .selectPerson {
   width: 280px;
   height: 46px;
+  line-height: 46px;
+  align-items: center;
   border: 1px solid #DEE2E6;
   border-radius: 16px;
   margin-left: 7px;
+}
+.selectPerson p {
+  font-size: 15px;
+  color: #343a40;
+}
+.selectPerson img:first-child {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+.selectPerson img:last-child {
+  width: 20px;
+  height: 20px;
+  margin-left: 100px;
 }
 .popUp {
   width: 374px;
   height: 448px;
   background-color: #fff;
   color: #343A40;
-  border: 1px solid #000;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  position: absolute;
+  top: 285px;
+  right: 318px;
+  z-index: 999;
+  opacity: 0;
 }
 .popTop {
   height: 111px;
   padding: 34px 24px 24px;
-  border: 1px solid #000;
+  position: relative;
+}
+.popTop img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 34px;
+  right: 24px;
 }
 .popTop h1 {
   margin-bottom: 14px;
@@ -384,6 +424,10 @@
   height: 48px;
   line-height: 48px;
 }
+.popMiddle div:nth-child(2),
+.popMiddle div:nth-child(3) {
+  margin-top: 16px;
+}
 .popMiddle h1 {
   font-weight: 700;
   font-size: 18px;
@@ -394,6 +438,50 @@
   font-weight: 600;
   font-size: 15px;
   color: #adb5bd;
+}
+.popMiddle > .row {
+  width: 326px;
+  justify-content: space-between;
+}
+.count {
+  width: 108px;
+  height: 46px;
+  line-height: 46px;
+  align-items: center;
+  padding: 13px 16px;
+  border-radius: 30px;
+  border: 1px solid #f1f3f5;
+}
+.count a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.count img {
+  width: 20px;
+}
+.count input {
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  border: none;
+  color: #141719;
+  font-size: 15px;
+  text-align: center;
+}
+.popBottom {
+  padding: 32px 24px;
+}
+.popBottom div:first-child {
+  margin-bottom: 24px;
+}
+.popBottom label {
+  width: 163px;
+  height: 24px;
+}
+.popBottom input {
+  margin-left: 7px;
 }
 /* selectBottom */
 .selectBottom {

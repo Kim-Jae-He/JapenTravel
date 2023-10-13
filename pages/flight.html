@@ -160,28 +160,65 @@
                 <a href="#" class="osaka">오사카 (OSA)</a>
             </div>
             <div class="selectDate row">
+              <img src="/JapenTravel/images/calendar.png" alt="">
               <input type="text" placeholder="가는날 선택" id="from" name="from">
               <input type="text" placeholder="오는날 선택" id="to" name="to">
             </div>
-            <div class="selectPerson">승객 1명, 일반석</div>
+            <div class="selectPerson row">
+              <img src="/JapenTravel//images/person.png" alt="">
+              <p>승객 1명, 일반석</p>
+              <img src="/JapenTravel/images/downBl.png" alt="" onclick="popOn();">
+            </div>
           </div>
           <div class="popUp">
             <div class="popTop">
               <h1>인원 & 좌석등급</h1>
               <p>나이는 탑승일 기준으로 선택해주세요.</p>
+              <img src="/JapenTravel/images/close.png" alt="" onclick="popOff();">
             </div>
             <div class="popMiddle">
               <div class="row">
-                <h1>성인</h1>
-                <span>만 12세 이상</span>
+                <div class="row">
+                  <h1>성인</h1>
+                  <span>만 12세 이상</span>
+                </div>
+                <div class="count row">
+                  <a href="#" onclick="down1();"><img src="/JapenTravel/images/minus.png" alt=""></a>
+                  <input type="text" name="quantity" id="quantity1" value="1">
+                  <a href="#" onclick="up1();"><img src="/JapenTravel/images/plus.png" alt=""></a>
+                </div>
               </div>
               <div class="row">
-                <h1>소아</h1>
-                <span>만 12세 미만</span>
+                <div class="row">
+                  <h1>유아</h1>
+                  <span>24개월 미만</span>
+                </div>
+                <div class="count row">
+                  <a href="#" onclick="down2();"><img src="/JapenTravel/images/minus.png" alt=""></a>
+                  <input type="text" name="quantity" id="quantity2" value="1">
+                  <a href="#" onclick="up2();"><img src="/JapenTravel/images/plus.png" alt=""></a>
+                </div>
               </div>
               <div class="row">
-                <h1>유아</h1>
-                <span>24개월 미만</span>
+                <div class="row">
+                  <h1>소아</h1>
+                  <span>만 12세 미만</span>
+                </div>
+                <div class="count row">
+                  <a href="#" onclick="down3();"><img src="/JapenTravel/images/minus.png" alt=""></a>
+                  <input type="text" name="quantity" id="quantity3" value="1">
+                  <a href="#" onclick="up3();"><img src="/JapenTravel/images/plus.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="popBottom">
+              <div class="row">
+                <label><input type="radio" id="일반석" name="일반석">일반석</label>
+                <label><input type="radio" id="프리미엄 일반석" name="프리미엄 일반석">프리미엄 일반석</label>
+              </div>
+              <div class="row">
+                <label><input type="radio" id="비지니스석" name="비지니스석">비지니스석</label>
+                <label><input type="radio" id="일등석" name="일등석">일등석</label>
               </div>
             </div>
           </div>
